@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="bg-dark py-1 w-100 fixed-top">
+    <nav class="container navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand text-uppercase text-white-50" href="#">Бутстрап</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav ml-auto align-items-md-center">
+          <li class="nav-item mx-md-2">
+            <a class="nav-link active" href="#">Домашняя</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Сервисы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Контакты</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="portfolio" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Портфолио</a>
+            <ul class="dropdown-menu" aria-labelledby="portfolio">
+              <li class="dropdown-item">Имя:Евгений</li>
+              <li class="dropdown-item">Фамилия:Тен</li>
+              <li class="dropdown-item">Отчество:Дмитриевич</li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="themes" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Темы</a>
+            <div class="dropdown-menu" aria-labelledby="themes">
+              <a href="#" class="dropdown-item">Наслаждения</a>
+              <a href="#" class="dropdown-item">Музыка</a>
+              <a href="#" class="dropdown-item">Медитация</a>
+              <a href="#" class="dropdown-item">Виртуальное путешествие</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="otherpages" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Другие страницы</a>
+            <div class="dropdown-menu" aria-labelledby="otherpages">
+              <a href="#" class="dropdown-item">Кто мы?</a>
+              <a href="#" class="dropdown-item">Купить шмот</a>
+              <a href="#" class="dropdown-item">Задать вопрос?</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active rounded-circle py-2"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active rounded-circle py-2"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active rounded-circle py-2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active vh-100 bg" style="background-image: url(imgs/my-girl.jpg);">
+        <div class="carousel-caption">
+          <h3 class="pb-3" style="font-size: 32px;">Просто нравится)</h3>
+        </div>
+      </div>
+      <div class="carousel-item vh-100 bg" style="background-image: url(imgs/my-house.jpg);">
+        <div class="carousel-caption">
+          <h3 class="pb-3" style="font-size: 32px;">Дом из мечтаний</h3>
+        </div>
+      </div>
+      <div class="carousel-item vh-100 bg" style="background-image: url(imgs/my-cars-1.jpg);">
+        <div class="carousel-caption">
+          <h3 class="pb-3" style="font-size: 32px;">Машина из мечтаний</h3>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container my-4">
+    <h1 class="border-bottom py-3 mb-3 font-weight-bold">
+      Добро пожаловать в отдел мечтаний
+    </h1>
+    <div class="row justify-content-around">
+      <div class="col-12 col-md-4 col-sm-6 my-2">
+        <div class="d-flex flex-column border border-info rounded" style="min-height: 100%;">
+          <h5 class="p-3 bg-success font-weight-bold text-white">Халявная еда</h5>
+          <p class="flex-grow-1 p-3">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большой свой речью,
+            рукописи решила предупредила своих дорогу продолжил заглавных?
+          </p>
+          <div class="p-3">
+            <a href="#" class="btn btn-info w-75">Обсудить</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-sm-6 my-2">
+        <div class="d-flex flex-column border border-success rounded" style="min-height: 100%;">
+          <h5 class="p-3 bg-warning font-weight-bold text-danger">Спортивное тело!</h5>
+          <p class="flex-grow-1 p-3">
+            Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Обеспечивает
+            переписали единственное безорфографичный. Использовало.
+          </p>
+          <div class="p-3">
+            <a href="#" class="btn btn-success w-75">Обсудить</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-sm-8 my-2">
+        <div class="d-flex flex-column border border-warning rounded" style="min-height: 100%;">
+          <h5 class="p-3 bg-info font-weight-bold text-white">Жить без обязательств</h5>
+          <p class="flex-grow-1 p-3">
+            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Города своих снова рот
+            диких.
+          </p>
+          <div class="p-3">
+            <a href="#" class="btn btn-warning w-75">Обсудить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5 shadow-sm">
+    <h2 class="font-weight-bold">Ништячки</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/love-img.jpg" alt="love" class="d-block w-100 h-100" />
+      </div>
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/concert.jpg" alt="" class="d-block w-100 h-100" />
+      </div>
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/money.png" alt="money" class="d-block w-100 h-100" />
+      </div>
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/relax.jpg" alt="relax" class="d-block w-100 h-100" />
+      </div>
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/food-bg.jpg" alt="food" class="d-block w-100 h-100" />
+      </div>
+      <div class="col-md-4 col-sm-6 my-2">
+        <img src="imgs/city-img.jpg" alt="city" class="d-block w-100 h-100" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="py-3 text-dark font-weight-bold">Города для души</h2>
+    <div class="row border-top border-bottom py-3">
+      <div class="col-lg-6">
+        <div class="d-flex flex-column">
+          <p class="my-2">Для начала убедитесь что вы были в этих городах:</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-primary">Астана</li>
+            <li class="list-group-item list-group-item-success">Алматы</li>
+            <li class="list-group-item list-group-item-danger">
+              Шымкент
+            </li>
+            <li class="list-group-item list-group-item-info">Актобе</li>
+            <li class="list-group-item list-group-item-light">
+              Санкт-Петербург
+            </li>
+            <li class="list-group-item list-group-item-dark">Москва</li>
+          </ul>
+          <p class="text-dark mt-3">
+            Далеко-далеко за словесными горами в стране гласных и согласных,
+            живут рыбные тексты. Города правилами пор агентство эта рекламных
+            его? Меня, всемогущая своего.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 my-3 shadow-lg py-3">
+        <img src="imgs/city-img.jpg" alt="city" class="d-block w-100 h-100" />
+      </div>
+    </div>
+  </div>
+  <div class="container bg-light my-4 p-4 rounded">
+    <div class="row">
+      <div class="col-md-8">
+        <p class="text-dark">
+          Далеко-далеко за словесными горами в стране гласных и согласных
+          живут рыбные тексты. Путь о точках рекламных толку рот, запятой
+          которое не. Большой мир подпоясал заглавных домах силуэт.
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 d-flex align-items-center">
+        <a href="#" class="btn-block shadow-sm btn btn-outline-dark">Попасть в группу</a>
+      </div>
+    </div>
+  </div>
+  <footer class="py-5 container border-top">
+    <span>Copyright Your Website 2020</span>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+/*добавил для кроссбраузерности object-fit cover не поддерживается*/
+.bg {
+    background-size: cover;
+    background-position: center;
+}
